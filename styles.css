@@ -137,7 +137,6 @@ header {
 
 .header__img--wrapper {
     padding-top: 32px;
-    max-width: 380px;
     width: 100%;
     margin: 0 auto;
     display: flex;
@@ -147,6 +146,8 @@ header {
 .header__img--wrapper img {
     width: 100%;
     height: auto;
+    position:relative;
+    z-index: 2;
 }
 
 .container {
