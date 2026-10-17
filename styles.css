@@ -146,9 +146,9 @@ header {
 .header__img--wrapper img {
     width: 100%;
     height: auto;
-    position:relative;
+    position: relative;
     z-index: 2;
-} 
+}
 
 .container {
     padding: 56px 0;
@@ -158,6 +158,11 @@ header {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+}
+.row__column{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #highlights {
@@ -234,4 +239,87 @@ header {
 #features {
     padding-top: 12vw;
     background-color: rgba(115, 66, 214, 0.1);
+}
+
+.books {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.book {
+    width: 25%;
+    padding: 24px;
+}
+
+.book__img {
+    max-height: 380px;
+    transition: all 300ms ease;
+    cursor: no-drop;
+}
+
+.book__img--wrapper {
+    margin-bottom: 8px;
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+}
+
+.book:hover .book__img {
+    transform: scale(1.03);
+}
+
+.book__title {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.book__title:hover {
+    text-decoration: underline;
+}
+
+.book__ratings {
+    margin-bottom: 8px;
+    color: gold;
+}
+
+.book__price--normal {
+    text-decoration: line-through;
+    padding-right: 6px;
+    color: gray;
+}
+#explore {
+    background-color: rgba(115, 66, 214, 0.1);
+}
+.no-cursor{
+    cursor: not-allowed;
+}
+footer{
+background-color: #242424;
+}
+.footer__logo{
+    display:flex;
+}
+.footer__logo.img{
+    width: 160px;
+    filter: grayscale(1) invert(1);
+}
+.footer__link,
+.footer__copyright {
+    color: #fff;
+}
+.footer_list{
+    margin: 20px 0 24px 0;
+}
+.footer__link{
+    padding: 0 8px;
+
+}
+a {
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+html{
+    scroll-behavior: smooth;
 }
